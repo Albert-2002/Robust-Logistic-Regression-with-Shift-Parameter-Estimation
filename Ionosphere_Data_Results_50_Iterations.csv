@@ -1,3 +1,3 @@
-Noise	L1 lasso Misclassification Rate	Elastic Net Misclassification Rate
-10%	0.2083 ± 0.0039 SE	0.1991 ± 0.0052 SE
-20%	0.2717 ± 0.0044 SE	0.2530 ± 0.0054 SE
+Noise, L1 lasso Misclassification Rate, Elastic Net Misclassification Rate
+10%, 0.2083 Â± 0.0039 SE, 0.1991 Â± 0.0052 SE
+20%, 0.2717 Â± 0.0044 SE, 0.2530 Â± 0.0054 SE
