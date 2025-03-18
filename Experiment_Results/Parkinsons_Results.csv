@@ -1,0 +1,3 @@
+Noise Level,L1 Lasso,Elastic Net
+10% Noise,0.3149 ± 0.0101 SE,0.2980 ± 0.0087 SE
+20% Noise,0.3339 ± 0.0075 SE,0.3159 ± 0.0088 SE
