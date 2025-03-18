@@ -1,0 +1,10 @@
+Model,Noise Level,Misclassification Rate
+Normal Logistic Regression,5% Noise,0.1562
+Normal Logistic Regression,10% Noise,0.1803
+Normal Logistic Regression,20% Noise,0.2285
+Robust Logistic Regression (L1 Lasso),5% Noise,0.1512
+Robust Logistic Regression (L1 Lasso),10% Noise,0.174
+Robust Logistic Regression (L1 Lasso),20% Noise,0.2177
+Robust Logistic Regression (Elastic Net),5% Noise,0.1362
+Robust Logistic Regression (Elastic Net),10% Noise,0.1573
+Robust Logistic Regression (Elastic Net),20% Noise,0.1937
