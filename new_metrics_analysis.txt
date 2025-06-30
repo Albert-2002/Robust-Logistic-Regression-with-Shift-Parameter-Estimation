@@ -1,0 +1,55 @@
+[1] Naive Logistic Regression:
+# Parameters
+n = 200  # Number of observations
+p = 20   # Number of features
+alpha = 0.1  # Desired Bayes error rate
+noise_rate = 0.2  # 20% of -1 class will be flipped to +1
+Average Test Misclassification Rate: 0.2402
+Average Precision: 0.8743
+Average Recall: 0.7188
+Average F1-Score: 0.7868
+Average AUC: 0.8394
+Average Training Time (s): 0.0224
+Average Iterations Until Convergence: 631.17
+
+-----------------------------------------------------------------------------------------------------------
+
+[2] L1-Lasso Robust Logistic Regression:
+# Parameters
+n = 200  # Number of observations
+p = 20    # Number of features
+alpha = 0.1  # Desired Bayes error rate
+noise_rate = 0.2  # 20% of -1 class will be flipped to +1
+lambda_ = 0.1  # Threshold parameter
+a = 2.0  # Multiplicative factor for shift parameter estimation
+threshold_type = "hard"  # Choose "soft" or "hard"
+Average Test Misclassification Rate: 0.2243
+Average Precision: 0.8792
+Average Recall: 0.7384
+Average F1-Score: 0.8002
+Average AUC: 0.8588
+Average Training Time (s): 0.3293
+Average Iterations Until Convergence: 4920.50
+
+-----------------------------------------------------------------------------------------------------------
+
+[3] Elastic-Net Robust Logistic Regression:
+# Parameters
+n = 200  # Number of observations
+p = 20    # Number of features
+alpha = 0.1  # Desired Bayes error rate
+noise_rate = 0.2  # 20% of -1 class will be flipped to +1
+lambda_ = 0.1  # Regularization parameter
+alpha_elastic = 0.1  # Mixing parameter (0 = Ridge, 1 = Lasso)
+gamma_lr = 0.1
+Average Test Misclassification Rate: 0.2093
+Average Precision: 0.8971
+Average Recall: 0.7473
+Average F1-Score: 0.8135
+Average AUC: 0.8684
+Average Training Time (s): 0.3074
+Average Iterations Until Convergence: 4542.86
+
+-----------------------------------------------------------------------------------------------------------
+ALL MODELS ARE TRAINED WITH [LEARNING RATE = 0.1] AND [EPOCHS = 5000].
+-----------------------------------------------------------------------------------------------------------
