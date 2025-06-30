@@ -1,0 +1,48 @@
+[1] Naive Logistic Regression:
+# Parameters
+n = 200  # Number of observations
+p = 20   # Number of features
+alpha = 0.1  # Desired Bayes error rate
+noise_rate = 0.2  # 20% of -1 class will be flipped to +1
+
+Average Test Misclassification Rate: 0.2385
+Average Training Time (s): 0.0498
+Average Iterations Until Convergence: 604.67
+
+-----------------------------------------------------------------------------------------------------------
+
+[2] L1-Lasso Robust Logistic Regression
+# Parameters
+n = 200  # Number of observations
+p = 20    # Number of features
+alpha = 0.1  # Desired Bayes error rate
+noise_rate = 0.2  # 20% of -1 class will be flipped to +1
+lambda_ = 0.1  # Threshold parameter
+a = 2.0  # Multiplicative factor for shift parameter estimation
+threshold_type = "hard"  # Choose "soft" or "hard"
+
+Average Test Misclassification Rate: 0.2302
+Average Training Time (s): 0.3032
+Average Iterations Until Convergence: 4940.76
+
+-----------------------------------------------------------------------------------------------------------
+
+[3] Elastic-Net Robust Logistic Regression
+# Parameters
+n = 200  # Number of observations
+p = 20    # Number of features
+alpha = 0.1  # Desired Bayes error rate
+noise_rate = 0.2  # 20% of -1 class will be flipped to +1
+lambda_ = 0.1  # Regularization parameter
+alpha_elastic = 0.1  # Mixing parameter (0 = Ridge, 1 = Lasso)
+gamma_lr = 0.01
+
+Average Test Misclassification Rate: 0.2055
+Average Training Time (s): 0.1711
+Average Iterations Until Convergence: 2050.87
+
+-----------------------------------------------------------------------------------------------------------
+
+ALL MODELS ARE TRAINED WITH [LEARNING RATE = 0.1] AND [EPOCHS = 5000].
+
+-----------------------------------------------------------------------------------------------------------
